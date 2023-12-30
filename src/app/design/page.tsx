@@ -22,14 +22,15 @@ export default function Component() {
           
           {/* Hero Image */}
           <div className="lg:w-2/3">
-            <img src="/hero.gif" alt="Hero" className="w-full h-auto" /> {/* Adjusted the margins and width for large screens */}
+            <img src="/hero.gif" alt="Hero" className="w-full h-auto px-8" /> {/* Adjusted the margins and width for large screens */}
           </div>
 
           {/* Right-side div (empty for now) */}
-          <div className="hidden lg:block lg:w-1/3 p-4"> {/* Adjusted the background and padding for styling */}
+          <div className="lg:block lg:w-1/3 p-4 px-8 text-xl"> {/* Adjusted the background and padding for styling */}
             {/* Content goes here */}
-            dekofjcaDIOfjADIOfjA
-          </div>
+            I exercise design by designing digital products as sites and apps. 
+
+Creation is something sacred and Resistance is the enemy . The battle is inside our own heads . We have a right only to our labor , not to the fruits of our labor . All the warrior can give is his life ; Because the most important thing about art is to work . Nothing else matters except sitting down every day and trying . Just as Resistance has its seat in hell , so Creation has its home in heaven .          </div>
         </div>
 
         <div className="flex flex-wrap">

@@ -37,9 +37,11 @@ export default function Component() {
     <div className=" lg:w-1/2 ml-32 mt-4 lg:mt-0 p-12"> {/* Add left padding and adjust margins on large screens */}
       <div className="flex-grow border-t border-black"></div>
       <p className="mt-4 text-xl hover:italic">
-        Bergen Assembly is a perennial model for art production structured around public events that take place in
-        Bergen every three years. Each edition is guided by a convener who is free to invent new ways of conceiving
-        the event, allowing each iteration of Bergen Assembly to take on a distinctly different shape and format. →
+      I'm storyteller, designer and developer. I'm currently growing Barbercard, a SaaS product
+    and also offering my skills through the Build & Sell Web Studio.
+      I studied Administration in Florianópolis but the real world experience came from running a family business.
+      There, I honed my skills in leadership, problem-solving, process improvement and sales.
+      My childhood dream was to create movies,  inspired by how well-told stories have moved people throughout history. Growing up, technology added a new dimension to this dream, fueling my belief in the transformative power of not just stories, but systems as well. 
       </p>
     </div>
   </div>
@@ -50,9 +52,9 @@ export default function Component() {
             <h2 className="text-2xl font-bold hover:italic">Build & Sell</h2>
           <div className="flex mt-4 mb-4 border-t border-black"></div>
 
-            <p className="mt-4 text-xl">Bergen Assembly’s offices function as both a public work- and event space.</p>
+            <p className="mt-4 text-xl">Specialize in crafting bespoke digital solutions that bring your ideas to life.</p>
             <p className="mt-4 text-xl">
-              Are you or your group interested in using our office?
+              Innovative development, and strategic marketing to create websites and web applications.  Building digital presences and selling visions to the world.
            
             </p>
             <a className="underline mt-4 text-xl hover:italic" href="#">
@@ -64,11 +66,11 @@ export default function Component() {
 
             <h2 className="text-2xl font-bold hover:italic">Barbercard</h2>
           <div className="flex mt-4 mb-4 border-t border-black"></div>
+          <p className="mt-4 text-xl">           SaaS platform dedicated to enhancing client loyalty through WhatsApp marketing automation.
+</p>
 
             <p className="mt-4 text-xl">
-              La Cantina de la Touriste is a permanent installation by the artist Sol Calero that reimagines the
-              interior of Kafé Mat & prat. The installation was made as part of the fourth edition of Bergen Assembly,
-              Yasmine and the Seven Sides of the Hepathedron, in 2022.
+            Making barbershops to connect with their clients easy and effective. Comprehensive CRM system, expertly designed to manage and grow your customer relationships.
             </p>
             <a className="underline mt-4 text-xl hover:italic" href="#">
               Read more here →
@@ -80,9 +82,9 @@ export default function Component() {
 <h2 className="text-2xl font-bold hover:italic">Data Analysis</h2>
 <div className="flex mt-4 mb-4 border-t border-black"></div>
 
-            <p className="mt-4 text-xl">Bergen Assembly’s offices function as both a public work- and event space.</p>
+            <p className="mt-4 text-xl">My current role at a corporate company is in interpreting and analyzing data to drive business solutions.</p>
             <p className="mt-4 text-xl">
-              Are you or your group interested in using our office?
+              Transforming raw data into meaningful insights that inform strategic decision-making.
            
             </p>
             <a className="underline mt-4 text-xl hover:italic" href="#">

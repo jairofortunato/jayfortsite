@@ -22,11 +22,11 @@ export default function Component() {
           
           {/* Hero Image */}
           <div className="lg:w-2/3">
-            <img src="/hero.gif" alt="Hero" className="w-full h-auto" /> {/* Adjusted the margins and width for large screens */}
+          <img src="/hero.gif" alt="Hero" className="w-full h-auto px-8" /> {/* Adjusted the margins and width for large screens */}
           </div>
 
           {/* Right-side div (empty for now) */}
-          <div className="hidden lg:block lg:w-1/3 p-4"> {/* Adjusted the background and padding for styling */}
+          <div className="lg:block lg:w-1/3 p-4 px-8 text-xl"> {/* Adjusted the background and padding for styling */}
             {/* Content goes here */}
             dekofjcaDIOfjADIOfjA
           </div>
