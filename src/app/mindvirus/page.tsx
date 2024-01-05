@@ -7,45 +7,45 @@ const TextPage = () => {
 
       <div className="w-full max-w-2xl mt-10">
         <h1 className="text-3xl font-bold mb-6">MIND VIRUS</h1>
-        <p className="mb-8">SSSSSSSSSS</p>
+        <p className="mb-8"></p>
 
         <div className='py-4'>
-        <h2 className="text-2xl font-semibold mb-4">SSSS</h2>
+        <h2 className="text-2xl font-semibold mb-4"></h2>
         <ul className="list-none space-y-2 mb-8">
           {/* Repeat for each item */}
-          <li>SSSSSSSSSSS</li>
+          <li></li>
           {/* ... */}
         </ul>
         </div>
         <div className='py-4'>
-        <h2 className="text-2xl font-semibold mb-4">SSSSS</h2>
+        <h2 className="text-2xl font-semibold mb-4"></h2>
         <ul className="list-none space-y-2 mb-8">
           {/* Repeat for each item */}
-          <li>Grew up in Charlottesville, VA</li>
+          <li></li>
           {/* ... */}
         </ul>
         </div>
         <div className='py-4'>
-        <h2 className="text-2xl font-semibold mb-4">Servitude</h2>
+        <h2 className="text-2xl font-semibold mb-4"></h2>
         <ul className="list-none space-y-2 mb-8">
           {/* Repeat for each item */}
-          <li>Grew up in Charlottesville, VA</li>
+          <li></li>
           {/* ... */}
         </ul>
         </div>
         <div className='py-4'>
-        <h2 className="text-2xl font-semibold mb-4">Giving Value</h2>
+        <h2 className="text-2xl font-semibold mb-4"></h2>
         <ul className="list-none space-y-2 mb-8">
           {/* Repeat for each item */}
-          <li>Grew up in Charlottesville, VA</li>
+          <li></li>
           {/* ... */}
         </ul>
         </div>
         <div className='py-4'>
-        <h2 className="text-2xl font-semibold mb-4">Solving Problems</h2>
+        <h2 className="text-2xl font-semibold mb-4"></h2>
         <ul className="list-none space-y-2 mb-8">
           {/* Repeat for each item */}
-          <li>Grew up in Charlottesville, VA</li>
+          <li></li>
           {/* ... */}
         </ul>
         </div>

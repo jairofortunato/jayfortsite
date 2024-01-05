@@ -1,5 +1,6 @@
 // Sidebar.tsx
 import React from 'react';
+import Link from 'next/link';
 
 const Sidebar: React.FC = () => {
   return (
@@ -30,12 +31,12 @@ const Sidebar: React.FC = () => {
 
       <div className="flex mt-6 border-t border-black"></div>
 
-      <div
+ <Link href="https://twitter.com/jayfortunato3" passHref target="_blank" rel="noopener noreferrer">     <div
         className="w-60 h-12 mt-8 py-2 flex justify-center items-center text-2xl text-orange-500 hover:text-orange-700 border-2 rounded-lg border-orange-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#ffa500,0_0_15px_#ffa500,0_0_30px_#ffa500] transition-colors hover:font-bold"
       >
-        SUBSCRIBE
+        SUBSCRIBE 
       </div>
-
+      </Link>
       <div className="flex mt-10 border-t border-black"></div>
 
       <div className="mt-8 space-y-8">
@@ -46,13 +47,12 @@ const Sidebar: React.FC = () => {
         </address>
         <div className="flex px-4 mt-12 border-t border-black"></div>
         <div className="flex space-x-2">
-          <a className="block text-xl hover:italic" href="#">Instagram</a>
-          <a className="block text-xl hover:italic" href="#">LinkedIn</a>
-          <a className="block text-xl hover:italic" href="#">Twitter</a>
-          <a className="block text-xl hover:italic" href="#">TikTok</a>
-          <a className="block text-xl hover:italic" href="#">Vsco</a>
+        <Link href="https://www.instagram.com/jairofortunato3/" passHref target="_blank" rel="noopener noreferrer" className="block text-xl hover:italic" >Instagram</Link>
+        <Link href="https://www.linkedin.com/in/jairofortunato/" passHref target="_blank" rel="noopener noreferrer" className="block text-xl hover:italic" >LinkedIn</Link>
+          <Link href="https://twitter.com/jayfortunato3" passHref target="_blank" rel="noopener noreferrer" className="block text-xl hover:italic">Twitter </Link>
+          <Link href="https://www.tiktok.com/@jayfortunato3" passHref target="_blank" rel="noopener noreferrer" className="block text-xl hover:italic" >TikTok</Link>
+          <Link href="https://vsco.co/jairofortuna2/gallery" passHref target="_blank" rel="noopener noreferrer" className="block text-xl hover:italic">Vsco</Link>
         </div>
-        <a className="block hover:italic" href="#">Instantly Re$ult</a>
       </div>
     </div>
   );

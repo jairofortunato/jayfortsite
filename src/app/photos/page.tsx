@@ -1,5 +1,6 @@
 import React from 'react';
 import Sidebar from '@/components/Sidebar';
+import Image from 'next/image';
 
 export default function Component() {
   return (
@@ -11,25 +12,32 @@ export default function Component() {
 
         {/* Language switcher */}
         <div className="absolute right-0 top-0 px-6 py-4 text-xl">
-          NO / EN
+        PT / EN
         </div>
 
         {/* Title */}
         <h1 className="px-3 mb-8 text-6xl font-medium mt-16"></h1>
-<div className='px-5'>
-        {/* Photo Rows */}
-        {[...Array(3)].map((_, rowIndex) => ( // Create three rows
-          <div key={rowIndex} className="flex flex-wrap -mx-2 mb-4">
-            {[...Array(3)].map((_, colIndex) => ( // Create three columns in each row
-              <div key={colIndex} className="w-full md:w-1/3 p-2">
-                <img src="/hero.gif" alt="Gallery" className="w-full h-auto rounded" />
-              </div>
-            ))}
-          </div>
-        ))}
-</div>
+        <div className='px-5'>
+          {/* Photo Rows */}
+          {[...Array(3)].map((_, rowIndex) => ( // Create three rows
+            <div key={rowIndex} className="flex flex-wrap -mx-2 mb-4">
+              {[...Array(3)].map((_, colIndex) => ( // Create three columns in each row
+                <div key={colIndex} className="w-full md:w-1/3 p-2">
+                  <Image 
+                    src="/photos.gif" 
+                    alt="Gallery" 
+                    className="w-full h-auto rounded" 
+                    layout="responsive" 
+                    width={500} // Specify the width
+                    height={300} // Specify the height
+                  />
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
         {/* Additional content, if needed */}
-        {/* ... */}
+        {/* ... */}a
       </div>
     </div>
   );
