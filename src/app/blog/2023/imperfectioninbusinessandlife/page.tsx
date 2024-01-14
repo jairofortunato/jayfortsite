@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-
+import Sidebar from '@/components/Sidebar';
 const TextPage = () => {
   return (
     <div className="flex justify-center min-h-screen bg-stone-200 px-4 py-8">
-      <a href="/blog" className="absolute top-4 left-4 text-black py-2 px-4 rounded">Return</a>
+<Sidebar/>
 
       <div className="w-full max-w-2xl mt-10">
         <h1 className="text-5xl font-normal mb-2 transition-transform duration-400 ease-in-out hover:translate-x-6">Imperfection in Business and Life</h1>

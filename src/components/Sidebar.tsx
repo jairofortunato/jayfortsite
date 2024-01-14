@@ -1,12 +1,46 @@
+'use client'
 // Sidebar.tsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const Sidebar: React.FC = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    // Disable main content scrolling when sidebar is open
+    const body = document.querySelector('body');
+    if (isSidebarOpen) {
+      body!.style.overflow = 'hidden';
+    } else {
+      body!.style.overflow = 'auto';
+    }
+
+    // Cleanup function to reset overflow when component unmounts
+    return () => {
+      body!.style.overflow = 'auto';
+    };
+  }, [isSidebarOpen]);
+
+  // Function to toggle the sidebar state
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
-    <div className="flex flex-col w-full lg:w-1/4 p-4 border-black lg:border-b-0 lg:border-r">
-      {/* Navigation links */}
-      <nav className="space-y-3">
+    <>
+      {/* Hamburger Icon - only visible on small screens and when sidebar is not open */}
+      <button
+        onClick={toggleSidebar}
+        className={`lg:hidden fixed top-0 left-0 z-20 p-4 ${isSidebarOpen ? 'hidden' : ''}`}
+      >
+        ☰
+      </button>
+
+      {/* Sidebar - shown based on state */}
+                         
+      <aside className={`fixed inset-y-0 left-0 transform flex flex-col bg-stone-200 w-full lg:w-1/4 p-4 border-black lg:border-b-0 lg:border-r z-30 ease-in-out  overflow-auto transition-transform duration-300 ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0 lg:static lg:block`}>
+        {/* Navigation links */}
+        <nav className="space-y-3" onClick={() => setIsSidebarOpen(false)}>
         <a className="block text-5xl font-light transition-transform duration-400 ease-in-out hover:translate-x-6" href="/">HOME</a>
         <a className="block text-5xl font-light transition-transform duration-400 ease-in-out hover:translate-x-6" href="/design">DESIGN</a>
         <a className="block text-5xl font-light transition-transform duration-400 ease-in-out hover:translate-x-6" href="/code">CODE</a>
@@ -54,7 +88,8 @@ const Sidebar: React.FC = () => {
           <Link href="https://vsco.co/jairofortuna2/gallery" passHref target="_blank" rel="noopener noreferrer" className="block text-xl hover:italic">Vsco</Link>
         </div>
       </div>
-    </div>
+      </aside>
+    </>
   );
 };
 

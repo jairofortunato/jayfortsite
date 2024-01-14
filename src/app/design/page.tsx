@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Component() {
+
   return (
     <div className="flex flex-col lg:flex-row bg-stone-200">
       <Sidebar />
@@ -11,42 +12,37 @@ export default function Component() {
       {/* Main content */}
       <div className="flex-1 flex flex-col relative"> {/* Removed w-full lg:w-3/4 to allow sidebar and main content to be side by side */}
 
-        {/* Language switcher */}
-        <div className="absolute right-0 top-0 px-6 py-4 text-xl">
-          NO / EN
-        </div>
 
         {/* Title */}
         <h1 className="px-3 mb-8 text-6xl font-medium mt-16">Design</h1>
 
-        {/* Hero Image and Right-side div container */}
-        <div className="flex flex-col lg:flex-row"> {/* This will contain both the image and the right-side div */}
-          <div className='px-12 flex'>
+            {/* Hero Image and Right-side div container */}
+            <div className="flex flex-col lg:flex-row">
+          
           {/* Hero Image */}
-          <div className="lg:w-1/3">
-          <Image 
-                src="/designgif.gif" 
-                alt="Hero" 
-                width={500} // Specify the width
-                height={300} // Specify the height
-                layout="responsive" // This makes the image scale with the parent element
-                className="w-full h-auto" // Adjusted the margins and width for large screens
-              />
+          <div className="lg:w-2/3">
+            <Image 
+              src="/codegif.gif" 
+              alt="Hero" 
+              width={300} // Specify the width
+              height={300} // Specify the height
+              layout="responsive" // This makes the image scale with the parent element
+              className="px-8" // Adjusted the margins and width for large screens
+            />
           </div>
+          
+       {/* Right-side div (empty for now) */}
+<div className="lg:block lg:w-1/3 px-4 text-xl">
+I exercise design by designing digital products such as sites and apps. Creation is something sacred, and Resistance is the enemy. The battle is inside our own heads. We have a right only to our labor, not to the fruits of our labor. All the warrior can give is his life, because the most important thing about art is to work. Nothing else matters except sitting down every day and trying. Just as Resistance has its seat in hell, so Creation has its home in heaven.
+</div>
+</div>
 
-   {/* Right-side div (empty for now) */}
-<div className="lg:block lg:w-1/3 p-4 px-8 text-xl"> {/* Adjusted the background and padding for styling */}
-  {/* Content goes here */}
-  I exercise design by designing digital products such as sites and apps.
-  Creation is something sacred, and Resistance is the enemy. The battle is inside our own heads. We have a right only to our labor, not to the fruits of our labor. All the warrior can give is his life, because the most important thing about art is to work. Nothing else matters except sitting down every day and trying. Just as Resistance has its seat in hell, so Creation has its home in heaven.
-</div>
-</div>
-</div>
+
 {/* Blog Content */}
-<div className="px-8 py-8 lg:mr-80">
+<div className=" py-8 lg:mr-80">
   {/* Articles */}
   {/* First Article */}
-  <div className="text-xl mb-4 space-y-8 px-8 mt-8">
+  <div className="text-xl mb-4 space-y-8 px-4 lg:px-8 mt-8">
     <h2 className="text-5xl font-normal mb-2 transition-transform duration-400 ease-in-out hover:translate-x-6">Barbercard</h2>
     <p className="text-xl mb-4">
       So, this whole thing started when a buddy threw me a restaurant loyalty card and dared me to make it an app. I ditched my plan for a life progress visualization and jumped in.

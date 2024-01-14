@@ -10,15 +10,12 @@ export default function Component() {
       <Sidebar />
 
       {/* Main content */}
-      <div className="flex flex-col w-full lg:w-3/4 bg-stone-200 relative">
+      <div className="flex-1 flex flex-col relative"> {/* Removed w-full lg:w-3/4 to allow sidebar and main content to be side by side */}
 
-        {/* Language switcher */}
-        <div className="absolute right-0 top-0 px-24 py-4 text-xl">
-          PT / EN
-        </div>
+ 
 
         {/* Title */}
-        <h1 className="p-4 text-6xl font-medium mt-24">Video</h1>
+        <h1 className="px-3 mb-8 text-6xl font-medium mt-16">Video</h1>
 
         {/* Image and text content container */}
         <div className="flex flex-col lg:flex-row">
@@ -45,9 +42,15 @@ export default function Component() {
           </div>
           <div className="w-full lg:w-1/3 p-8 ">
             <div className="flex mb-4 border-t border-black"></div>
-            <h2 className="text-2xl font-bold hover:italic">Tiktok</h2>
+            <h2 className="text-2xl font-bold hover:italic">Build & Sell</h2>
             <div className="flex mt-4 mb-4 border-t border-black"></div>
-            <p className="mt-4 text-xl">Soon</p>
+            <p className="mt-4 text-xl">Videos about creating and selling products</p>
+          </div>
+          <div className="w-full lg:w-1/3 p-8 ">
+            <div className="flex mb-4 border-t border-black"></div>
+            <h2 className="text-2xl font-bold hover:italic">Jay Fort</h2>
+            <div className="flex mt-4 mb-4 border-t border-black"></div>
+            <p className="mt-4 text-xl">Personal Videos</p>
           </div>
           {/* Additional content can be added here */}
         </div>

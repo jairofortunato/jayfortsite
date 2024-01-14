@@ -58,11 +58,7 @@ export default function Component() {
       {/* Main content */}
       <div className="flex-1 flex flex-col relative">
   
-        {/* Language switcher */}
-        <div className="absolute right-0 top-0 px-6 py-4 text-xl">
-        PT / EN
-        </div>
-  
+
         {/* Title */}
         <h1 className="px-3 mb-8 text-6xl font-medium mt-16">Experience</h1>
   

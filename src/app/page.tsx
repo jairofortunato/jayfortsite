@@ -3,7 +3,9 @@ import Sidebar from '@/components/Sidebar';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 export default function Component() {
+  
   return (
     <div className="flex flex-col lg:flex-row bg-stone-200">
       <Sidebar />
@@ -11,10 +13,7 @@ export default function Component() {
 {/* Main content */}
 <div className="flex flex-col w-full lg:w-3/4 bg-stone-200 relative"> {/* Adjust the background color and set position relative */}
 
-  {/* Language switcher */}
-  <div className="absolute right-0 top-0 px-24 py-4 text-xl"> {/* Use absolute positioning */}
-    PT / EN
-  </div>
+
 
   {/* Title */}
   <h1 className="px-3 mb-8 text-6xl font-medium mt-16">Jay Fort</h1>

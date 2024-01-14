@@ -1,10 +1,10 @@
 import React from 'react';
+import Sidebar from '@/components/Sidebar';
 
 const TextPage = () => {
   return (
     <div className="flex justify-center  min-h-screen bg-stone-200 px-4 py-8">
-      <a href="/" className="absolute top-4 left-4  text-black py-2 px-4 rounded">Return</a>
-
+<Sidebar/>
       <div className="w-full max-w-2xl mt-10">
         <h1 className="text-3xl font-bold mb-6">PEOPLE</h1>
         <p className="mb-8"></p>
