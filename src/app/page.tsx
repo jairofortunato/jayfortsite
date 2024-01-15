@@ -50,6 +50,9 @@ export default function Component() {
     <p className="mt-4 text-xl">
       Innovative development, and strategic marketing to create websites and web applications. Building digital presences and selling visions to the world.
     </p>
+    <Link  className="underline mt-4 text-xl hover:italic" href="https://buildsellwebstudio.framer.website/" passHref target="_blank" rel="noopener noreferrer">
+        Check more here →
+    </Link>
 
   </div>
   <div className="w-full lg:w-1/3 p-8 ">
