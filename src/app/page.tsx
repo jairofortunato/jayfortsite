@@ -69,11 +69,10 @@ export default function Component() {
   </div>
   <div className="w-full lg:w-1/3 p-8 ">
     <div className="flex mb-4 border-t border-black"></div>
-    <h2 className="text-2xl font-bold hover:italic">Data Analysis</h2>
+    <h2 className="text-2xl font-bold hover:italic">Current role: Customer Success </h2>
     <div className="flex mt-4 mb-4 border-t border-black"></div>
-    <p className="mt-4 text-xl">My current role at a corporate company is in interpreting and analyzing data to drive business solutions.</p>
+    <p className="mt-4 text-xl">My current role at a startup company is in activation of medical clinics to sell more with the company Saas.</p>
     <p className="mt-4 text-xl">
-      Transforming raw data into meaningful insights that inform strategic decision-making.
     </p>
 
   </div>
