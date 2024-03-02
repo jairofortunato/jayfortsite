@@ -43,6 +43,7 @@ const Sidebar: React.FC = () => {
         <nav className="space-y-3" onClick={() => setIsSidebarOpen(false)}>
         <a className="block text-5xl font-light transition-transform duration-400 ease-in-out hover:translate-x-6" href="/">HOME</a>
         <a className="block text-5xl font-light transition-transform duration-400 ease-in-out hover:translate-x-6" href="/design">DESIGN</a>
+        <a className="block text-5xl font-light transition-transform duration-400 ease-in-out hover:translate-x-6" href="/books">BOOKS</a>
         <a className="block text-5xl font-light transition-transform duration-400 ease-in-out hover:translate-x-6" href="/code">CODE</a>
         <a className="block text-5xl font-light transition-transform duration-400 ease-in-out hover:translate-x-6" href="/video">VIDEO</a>
         <a className="block text-5xl font-light transition-transform duration-400 ease-in-out hover:translate-x-6" href="/blog">BLOG</a>
